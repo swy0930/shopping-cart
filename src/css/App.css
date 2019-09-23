@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.margin10{
+  margin: 10px 10px 10px 10px;
+}
+
+.floatRight{
+  float: right;
+}
