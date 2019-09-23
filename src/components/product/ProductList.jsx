@@ -1,11 +1,11 @@
 import React from 'react';
 import {Row, Button, Container} from 'react-bootstrap';
 import cloneDeep from 'lodash/cloneDeep';
-import { addToCart } from "../actions/cart";
+import { addToCart } from "../../actions/cart";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 import sumBy from 'lodash/sumBy';
-import ProductItem from '../components/product/ProductItem';
+import ProductItem from './ProductItem';
 import { FaShoppingCart } from 'react-icons/fa';
 
 class ProductList extends React.Component{
@@ -44,7 +44,7 @@ class ProductList extends React.Component{
         if(product){
             //check whether the quantity is valid, it could be empty
             let product =  this.state.products.find((item)=>item.name===productName);
-            if(product.quantity){
+            if(product.quantity && product.quantity>0){
                 this.props.addToCart({
                     name:product.name,
                     price:product.price,

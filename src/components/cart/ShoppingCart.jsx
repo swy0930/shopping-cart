@@ -2,11 +2,11 @@ import React from 'react';
 import {Row,Button} from 'react-bootstrap';
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
-import { deleteFromCart } from "../actions/cart";
+import { deleteFromCart } from "../../actions/cart";
 import sumBy from 'lodash/sumBy';
 import {Table,Container} from 'react-bootstrap';
-import CartItem from '../components/cart/CartItem';
-import {currencyFormatter} from '../utils/formatter';
+import CartItem from './CartItem';
+import {currencyFormatter} from '../../utils/formatter';
 import { TiArrowBack } from "react-icons/ti";
 
 class ShoppingCart extends React.Component{
