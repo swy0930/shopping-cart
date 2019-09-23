@@ -1,7 +1,8 @@
 Instructions:
-  1. Dpwnload the zip file.
-  2. On Command Line, run "npm install" to install the necessary node modules.
+  1. Download the zip file.
+  2. Run "npm install" to install the necessary node modules.
   3. Run "npm start" to start the app.
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
